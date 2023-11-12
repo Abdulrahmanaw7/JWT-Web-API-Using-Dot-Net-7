@@ -49,6 +49,7 @@ namespace JWTDemo.Services
             return new AuthModel
             {
                 Email = user.Email,
+                Username = user.UserName,
                 ExpiresOn = jwtSecurityToken.ValidTo,
                 IsAuthenticated = true,
                 Roles = new List<string> { "User" },
